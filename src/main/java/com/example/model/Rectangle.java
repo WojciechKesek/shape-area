@@ -11,14 +11,12 @@ import java.util.Scanner;
 @Conditional(RectangleCondition.class)
 public class Rectangle implements Shape{
 
-    public Rectangle() {
-    }
-
     @Override
-    public int getArea() {
+    public double getArea() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please type length and width of rectangle");
+        System.out.print("Please type a: ");
         int a = scanner.nextInt();
+        System.out.print("Please type b: ");
         int b = scanner.nextInt();
         scanner.close();
         return a*b;
@@ -26,6 +24,6 @@ public class Rectangle implements Shape{
 
     @Override
     public String toString() {
-        return "Rectangle ";
+        return "Rectangle";
     }
 }

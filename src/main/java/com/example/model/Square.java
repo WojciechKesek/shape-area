@@ -10,14 +10,10 @@ import java.util.Scanner;
 @Conditional(SquareCondition.class)
 public class Square implements Shape{
 
-
-    public Square() {
-    }
-
     @Override
-    public int getArea() {
+    public double getArea() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please type length of square");
+        System.out.print("Please type a: ");
         int a = scanner.nextInt();
         scanner.close();
         return a*a;
@@ -25,6 +21,6 @@ public class Square implements Shape{
 
     @Override
     public String toString() {
-        return "Square ";
+        return "Square";
     }
 }
