@@ -1,4 +1,4 @@
-package com.example.config.aspect;
+package com.example.aspect;
 
 import com.example.model.Shape;
 import org.aspectj.lang.ProceedingJoinPoint;
