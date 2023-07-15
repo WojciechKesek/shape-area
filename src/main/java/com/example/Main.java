@@ -11,6 +11,6 @@ public class Main {
         ApplicationContext applicationContext
                 = new AnnotationConfigApplicationContext(AppConfig.class);
         ShapeService service = (ShapeService) applicationContext.getBean("shapeService");
-        service.getArea();
+        service.getShapeArea();
     }
 }

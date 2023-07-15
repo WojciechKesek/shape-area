@@ -11,7 +11,7 @@ public class ShapeService {
 
     private final Shape shape;
 
-    public void getArea(){
+    public void getShapeArea(){
         System.out.println("Area of " + shape + " is: " + shape.getArea());
     }
 }
